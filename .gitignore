@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Node / Frontend
+node_modules/
+.next/
+out/
+build/
+dist/
+.env*.local
+
+# Java / Spring Boot
+target/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!mvnw
+!mvnw.cmd
+.gradle/
+*.class
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Logs
+logs/
+*.log
+
+# Temp
+.temp/
+.tmp/
+
+.agents/skills/
