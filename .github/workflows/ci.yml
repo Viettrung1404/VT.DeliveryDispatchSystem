@@ -40,8 +40,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Build & Test ${{ matrix.service }}
-        run: ./mvnw clean verify
-        working-directory: ${{ matrix.service }}
+        run: |
+          chmod +x ./mvnw
+          ./mvnw clean verify
+        working-directory: backend/${{ matrix.service }}
 
   frontend-test:
     runs-on: ubuntu-latest
