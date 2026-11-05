@@ -31,7 +31,7 @@ services:
 
   # 3. Apache Kafka (KRaft mode - no Zookeeper needed)
   kafka:
-    image: bitnami/kafka:3.5
+    image: soldevelo/kafka:3.5
     container_name: dds_kafka
     environment:
       # KRaft settings
